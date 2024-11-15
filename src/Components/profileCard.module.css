@@ -1,0 +1,52 @@
+.card {
+    position: relative;
+    width: 165px;
+    height: 165px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profileImage {
+    width: 100%;
+    height: 100%;
+    /* object-fit: cover; */
+    filter: blur(4px);
+}
+
+.actions {
+    position: absolute;
+    bottom: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.actionButton {
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.actionButtonLike{
+    width: 28px;
+    height: 28px;
+    fill: #AA3FEC;
+    margin-top: 12px;
+}
+.actionButtonCross {
+    width: 20px;
+    height: 20px;
+    fill: #AA3FEC;
+}

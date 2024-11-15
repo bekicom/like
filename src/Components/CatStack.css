@@ -1,0 +1,98 @@
+.cat-stack {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+  
+  .card-container {
+    position: relative;
+    width: 256px;
+    height: 384px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .cat-card {
+    padding: 24px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    width: 256px;
+  }
+  
+  .cat-card.swipe-left {
+    background-color: #ef4444;
+    color: white;
+    transform: translateX(-20px) rotate(-5deg);
+  }
+  
+  .cat-card.swipe-right {
+    background-color: #22c55e;
+    color: white;
+    transform: translateX(20px) rotate(5deg);
+  }
+  
+  .card-text {
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    margin: 0;
+  }
+  
+  .button-container {
+    display: flex;
+    gap: 16px;
+  }
+  
+  .button {
+    padding: 8px;
+    border-radius: 50%;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .button:hover {
+    transform: scale(1.1);
+  }
+  
+  .button:active {
+    transform: scale(0.95);
+  }
+  
+  .button-left {
+    background-color: #ef4444;
+  }
+  
+  .button-right {
+    background-color: #22c55e;
+  }
+  
+  .button-undo {
+    background-color: #3b82f6;
+  }
+  
+  @keyframes swipeLeft {
+    from {
+      transform: translateX(0) rotate(0);
+    }
+    to {
+      transform: translateX(-100px) rotate(-20deg);
+    }
+  }
+  
+  @keyframes swipeRight {
+    from {
+      transform: translateX(0) rotate(0);
+    }
+    to {
+      transform: translateX(100px) rotate(20deg);
+    }
+  }

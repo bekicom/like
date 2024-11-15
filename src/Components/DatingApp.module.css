@@ -1,0 +1,112 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f1f1f1;
+    padding: 1rem;
+  }
+  
+  .card {
+    width: 100%;
+    max-width: 32rem;
+  }
+  
+  .content {
+    padding: 0;
+  }
+  
+  .imageContainer {
+    height: 16rem;
+    background-color: #e3e3e3;
+    position: relative;
+  }
+  
+  .profileImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .infoContainer {
+    padding: 1.5rem;
+  }
+  
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+  }
+  
+  .name {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .location {
+    font-size: 0.875rem;
+    color: #6b7280;
+  }
+  
+  .bio {
+    color: #4b5563;
+    margin-bottom: 1.5rem;
+  }
+  
+  .interests {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .interest {
+    background-color: #e5e7eb;
+    color: #4b5563;
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+  }
+  
+  .actions {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+  
+  .actionButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3rem;
+    height: 3rem;
+    background-color: #e5e7eb;
+    border-radius: 9999px;
+    transition: background-color 0.2s ease-out;
+  }
+  
+  .rejectButton {
+    color: #ef4444;
+  }
+  
+  .rejectButton:hover {
+    background-color: #fca5a5;
+  }
+  
+  .likeButton {
+    color: #22c55e;
+  }
+  
+  .likeButton:hover {
+    background-color: #a7f3d0;
+  }
+  
+  .messageButton {
+    color: #3b82f6;
+  }
+  
+  .messageButton:hover {
+    background-color: #bfdbfe;
+  }

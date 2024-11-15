@@ -1,0 +1,33 @@
+/* Hint.module.css */
+.hintContainer {
+    position: relative;
+    width: 31.16px; /* icon or surrounding container */
+    height: 31.16px;
+}
+
+.hintBalloon {
+    width: 117.47px;
+    height: 34.76px;
+    background: #EBEEF2;
+    border-top-left-radius: 10.79px;
+    border-top-right-radius: 10.79px;
+    border-bottom-right-radius: 10.79px;
+    position: absolute;
+    top: -8px;
+    left: 60px;/* Adjust to position it near the icon */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+.hintText {
+    width: 112.67px;
+    height: 10.79px;
+    text-align: center;
+    color: black;
+    font-size: 9.13px;
+    font-family: 'Jost', sans-serif;
+    font-weight: 300;
+    word-wrap: break-word;
+}

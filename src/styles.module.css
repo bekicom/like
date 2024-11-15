@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Roboto&display=swap');
+
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+    .button {
+        width: 90%;
+        height: 48px;
+    }
+}

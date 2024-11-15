@@ -1,0 +1,92 @@
+/* PremiumAlert.module.css */
+
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6); /* Dimming effect */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000; /* Ensures it's on top */
+}
+
+.modalContent {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 75%;    
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    position: relative;
+    height: 20em;
+}
+
+.icon {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.premiumButton {
+    background-color: #AA3FEC;
+    color: white;
+    border-radius: 0.75rem;
+    padding: 1rem;
+    transition: background-color 0.2s;
+    cursor: pointer;
+    border: 0;
+    width: 50%;
+    font-family: 'Jost', sans-serif;
+    font-weight: 400;
+    word-wrap: break-word;
+    font-size: 14px;
+}
+
+.closeButton {
+    background-color: #ccc;
+    color: white;
+    border-radius: 0.75rem;
+    padding: 1rem;
+    transition: background-color 0.2s;
+    cursor: pointer;
+    border: 0;
+    width: 50%;
+    font-family: 'Jost', sans-serif;
+    font-weight: 400;
+    word-wrap: break-word;
+    font-size: 14px;
+}
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+   
+}
+.premiumP {
+    font-family: 'Jost', sans-serif;
+    font-weight: 400;
+    word-wrap: break-word;
+    font-size: 14px;
+
+}
+.premiumH2 {
+    font-family: 'Jost', sans-serif;
+    font-weight: 700;
+    word-wrap: break-word;
+    font-size: 32px;
+}

@@ -1,0 +1,104 @@
+.iconContainer {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 10px;
+    border-bottom: 1px solid #ddd;
+}
+.card {
+    position: relative;
+    width: 165px;
+    height: 165px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.profileImage {
+    width: 100%;
+    height: 100%;
+    /* object-fit: cover; */
+    filter: blur(4px);
+}
+.tab {
+    font-size: 16px;
+    color: #7a7a7a;
+    text-align: center;
+    padding: 10px 0;
+    cursor: pointer;
+    flex: 1;
+    position: relative;
+    transition: color 0.3s;
+}
+
+.tab:hover {
+    color: #AA3FEC;
+}
+
+.tabActive {
+    color: #a655f3;
+    font-weight: bold;
+}
+
+.tabActive::after {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background-color: #AA3FEC;
+}
+
+.contentContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.message {
+    color: #7a7a7a;
+    margin: 10px 0;
+    font-family: 'Jost', sans-serif;
+    font-weight: 300;
+    word-wrap: break-word;
+    font-size: 23px;
+}
+
+.message2 {
+    font-size: 20px;
+    color: black;
+    font-family: 'Jost', sans-serif;
+    font-weight: 500;
+    word-wrap: break-word;
+}
+
+.button {
+    background-color: #AA3FEC;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-size: 16px;
+    margin-top: 20px;
+    cursor: pointer;
+    width: 50%;
+    font-family: 'Jost', sans-serif;
+    font-weight: 500;
+}
+
+.mainGroup {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    gap: 20px; /* space between grid items */
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto; /* center the grid container */
+    width: fit-content; /* optional, only as wide as needed for the grid */
+    margin-bottom: 7em;
+    margin-top: 2em;
+}

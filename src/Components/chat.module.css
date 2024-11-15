@@ -1,0 +1,77 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #fff;
+}
+.chatContainer {
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 10em;
+}
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.searchContainer {
+    margin-bottom: 20px;
+}
+.searchInput {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    font-size: 16px;
+    outline: none;
+}
+.searchInput::placeholder {
+    color: #666;
+}
+.messagesList {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.messageItem {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 8px 0;
+}
+.avatarContainer {
+    flex-shrink: 0;
+}
+.avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.messageContent {
+    flex: 1;
+    min-width: 0;
+}
+.messageHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4px;
+}
+.userName {
+    font-size: 16px;
+    font-weight: 500;
+    color: #000;
+}
+.messageTime {
+    font-size: 14px;
+    color: #666;
+}
+.messageText {
+    font-size: 14px;
+    color: #666;
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

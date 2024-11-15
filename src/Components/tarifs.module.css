@@ -1,0 +1,170 @@
+/* Container */
+.appContainer {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 92px;
+}
+
+/* Header Styles */
+.header {
+  text-align: center;
+  padding-bottom: 20px;
+  font-family: 'Jost', sans-serif;
+  font-weight: 700;
+  word-wrap: break-word;
+  font-size: 20px;
+  border: 1px solid #ffffff;
+  background: white;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5;
+  padding: 7%;
+
+}
+.payTarif {
+  text-align: center;
+}
+
+.header h1 {
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.accountStatus {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+
+.accountStatus div {
+  text-align: left;
+}
+
+.accountStatus p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.accountStatus span {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.activateBtn {
+  background-color: #AA3FEC;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 50px;
+  font-size: 16px;
+  margin-top: 10px;
+  cursor: pointer;
+  width: 83%;
+
+}
+
+/* Scrollable Tariff Section */
+.tariffContainer {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  /* Horizontal scroll */
+  padding: 10px 0;
+
+}
+
+.tariffCard {
+  background-color: #ffffff;
+  border: 1px solid #8E8E8E;  
+  border-radius: 10px;
+  width: 114px;
+  padding: 3px;
+  text-align: center;
+  flex-shrink: 0;
+  font-family: 'Jost', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  transition: border-color 0.3s ease; /* Smooth transition for border color */
+  
+  /* Prevent shrink */
+}
+.active {
+  border-color: #AA3FEC; /* New border color for the active state */
+}
+
+.tariffCard h2 {
+  margin: 10px 0;
+}
+
+.tariffCard span {
+  font-size: 10px;
+  color: #999;
+}
+
+/* Information Cards */
+.infoCards {
+  margin-top: 20px;
+}
+.infoCardText{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+}
+/* img {
+  width: 40px;
+} */
+
+.infoCard {
+  display:flex;
+  align-items: center;
+  gap: 10%;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 10px;
+  font-family: 'Jost', sans-serif;
+  font-weight: 700;
+  word-wrap: break-word;
+  font-size: 20px;
+}
+
+.infoCard p {
+  font-size: 14px;
+  margin: 0;
+}
+
+.infoCard span {
+  font-size: 12px;
+  color: #999;
+}
+.img img{
+  width: 40px;
+}
+/* Subscribe Button */
+.subscribeBtn {
+  background-color: #AA3FEC;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 50px;
+  font-size: 16px;
+  margin-top: 20px;
+  cursor: pointer;
+  width: 100%;
+  font-family: 'Jost', sans-serif;
+  font-weight: 500;
+  word-wrap: break-word;
+  font-size: 16px;
+}
+
+/* Footer at the bottom */
+:global(footer) {
+  margin-top: 20px;
+}

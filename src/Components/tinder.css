@@ -1,0 +1,144 @@
+/* body {
+    overflow-y: hidden; 
+    overflow-x: hidden;
+} */
+.card {
+    position: relative;
+    width: 400px;
+    padding: 20px;
+    max-width: 85vw;
+    height: 50vh;
+    border-radius: 10px;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .card h3 {
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    margin: 10px;
+  }
+  
+  .tinderCard_container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10vh;
+    overflow-x: hidden; /* Freeze horizontal overflow */
+    width: 100%; /* Ensure the container takes up the full width */
+    overflow-y: hidden; /* Freeze horizontal overflow */
+
+  }
+  
+  .swipe {
+    position: absolute;
+  }
+  .tinder-container {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-color: #f5f5f5;
+  }
+  
+  .tinder-cards {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .tinder-card {
+    position: absolute;
+    width: 100%;
+    padding: 0 16px;
+  }
+  
+  .card-inner {
+    position: relative;
+    width: 100%;
+  }
+  
+  .card-image {
+    position: relative;
+    height: 70vh;
+    border-radius: 16px;
+    background-color: white;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  .card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .card-gradient {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 24px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, transparent 100%);
+  }
+  
+  .card-info {
+    color: white;
+  }
+  
+  .name-age {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 12px;
+  }
+  
+  .name-age h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .name-age span {
+    font-size: 20px;
+  }
+  
+  .profile-details {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  
+  .profile-details p {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 0;
+    font-size: 16px;
+  }
+  
+  .icon {
+    font-size: 14px;
+    opacity: 0.8;
+  }
+  
+  /* Animation classes for swiping */
+  .swipe {
+    position: absolute;
+    width: 100%;
+    transform-origin: bottom;
+  }
+  
+  .swipe.swiping {
+    transition: transform 0.3s ease-out;
+  }
+  
+  .swipe.left {
+    transform: translateX(-120%) rotate(-20deg);
+  }
+  
+  .swipe.right {
+    transform: translateX(120%) rotate(20deg);
+  }

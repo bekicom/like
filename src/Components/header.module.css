@@ -1,0 +1,70 @@
+.header {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+  
+  .logoText {
+    color: #AA3FEC;
+    font-size: 1.5rem;
+  }
+  
+  .logoTextBold {
+    composes: logoText;
+    font-weight: bold;
+  }
+  
+  .iconGroup {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .iconWrapper {
+    position: relative;
+  }
+  
+  .iconWrapper img {
+    width: 32px;
+  }
+  
+  .badge {
+    position: absolute;
+    top: -0.5rem;
+    right: -0.5rem;
+    background-color: #AA3FEC;
+    color: white;
+    font-size: 0.75rem;
+    border-radius: 9999px;
+    width: 1rem;
+    height: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .content {
+    flex: 1;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 89%;
+    margin: 0 auto;
+  }
+  
+  .title {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+  }
+  .iconWrapper img {
+    width: 29px;
+  }

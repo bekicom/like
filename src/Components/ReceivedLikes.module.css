@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Roboto&display=swap');
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 28rem;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  border-radius: 29px;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+  overflow: hidden;
+  border: 2px solid #AA3FEC;
+}
+
+.imgHint {
+  width: 35px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  justify-content: space-between;
+  width: 96%;
+}
+
+.infoIcon {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 9999px;
+  background-color: #f3e8ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.infoIconText {
+  color: #9333ea;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.title {
+  font-size: 1.125rem;
+  font-weight: 500;
+  margin-right: 15%;
+  font-family: 'Jost', sans-serif;
+  font-weight: 700;
+  word-wrap: break-word;
+  font-size: 25px;
+}
+
+.contentWrapper {
+  position: relative;
+}
+
+.blurredContent {
+  filter: blur(4px);
+  pointer-events: none;
+}
+
+.likeItem {
+  padding: 1rem;
+  border-bottom: 1px solid #e5e7eb;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.userInfo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.userAvatar {
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: #e5e7eb;
+  border-radius: 9999px;
+}
+
+.userDetails {
+  display: flex;
+  flex-direction: column;
+}
+
+.userName {
+  font-weight: 500;
+}
+
+.timeStamp {
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+.likeIcon {
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: #fee2e2;
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.heartIcon {
+  color: #ef4444;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(255, 255, 255, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.activationText {
+  font-size: 23px;
+  font-family: 'Jost';
+  font-weight: 900;
+  word-wrap: break-word;
+  color: black
+}
+
+.activateButton {
+  padding: 0.5rem 1.5rem;
+  background-color: #AA3FEC;
+  border: 0;
+  color: white;
+  border-radius: 9999px;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.activateButton:hover {
+  background-color: #7e22ce;
+}
