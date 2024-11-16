@@ -6,8 +6,7 @@
   align-items: center;
   justify-content: space-between;
   flex-direction: column;
-  overflow: hidden; 
- 
+  overflow: hidden;
 }
 
 .card-wrapper {
@@ -24,7 +23,7 @@
   position: relative;
   width: 100%;
   height: 100%;
- 
+
   border-radius: 16px;
   /* background-color: white; */
   overflow: hidden;
@@ -76,17 +75,14 @@
 
 .buttons-container {
   position: absolute;
-  bottom: 0px;
+  bottom: 150px;
   left: 0;
   right: 0;
   display: flex;
   justify-content: space-around;
   /* background-color: red; */
   padding: 20px;
-
 }
-
-
 
 .action-button {
   width: 56px;
@@ -101,7 +97,7 @@
   cursor: pointer;
   transition: transform 0.2s;
 }
-.dislike{
+.dislike {
   width: 62px;
   height: 62px;
   border-radius: 50%;
@@ -109,17 +105,15 @@
   align-items: center;
   justify-content: center;
   color: white;
-  
 }
-.like{
-  color: #AA3FEC;
+.like {
+  color: #aa3fec;
   width: 62px;
   height: 62px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-
 }
 .action-button:hover {
   transform: scale(1.05);
@@ -189,12 +183,12 @@
 
 /* Tilt effect */
 .swiper-slide.tilt {
-    transform: rotate(-30deg); /* Negative rotation for left swipe */
-    transition: transform 0.3s ease; /* Smooth transition */
+  transform: rotate(-30deg); /* Negative rotation for left swipe */
+  transition: transform 0.3s ease; /* Smooth transition */
 }
 
 .swiper-slide-next.tilt {
-    transform: rotate(30deg); /* Positive rotation for right swipe */
+  transform: rotate(30deg); /* Positive rotation for right swipe */
 }
 
 /* 
@@ -238,22 +232,18 @@
   background-color: rgb(54, 94, 77);
 } */
 
-
-
 /* new css */
 
-    .tinder-container {
+.tinder-container {
   width: 350px;
   height: 538px;
   margin: 0 auto;
   /* margin-top: 100px; */
   overflow: hidden;
   position: relative;
-  
 }
 
-#img{
-
+#img {
   object-fit: cover;
 }
 
@@ -264,13 +254,19 @@
 
 .girl-item {
   width: 100%;
-  height: 80%;
+  height: 70%;
   text-align: center;
   font-size: 18px;
   border-radius: 5px;
   margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
 }
-
+.mySwiper {
+  height: 100%;
+}
 .girl-name {
   margin-top: 20px;
   font-size: 20px;
@@ -284,7 +280,7 @@
   gap: 47px;
 }
 
-.dislike-sms{
+.dislike-sms {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -300,7 +296,7 @@ button {
 }
 
 .like-button {
-  background-color: #AA3FEC; /* Green */
+  background-color: #aa3fec; /* Green */
   color: white;
 }
 
@@ -314,13 +310,10 @@ button:hover {
 }
 .tinder-container {
   width: 350px;
-  height: 600px;
+  height: 800px;
   margin: 0 auto;
   position: relative;
- 
-
 }
-
 
 .animation-text {
   position: absolute;
@@ -336,7 +329,7 @@ button:hover {
 }
 
 .animation-text.like {
-  color: #AA3FEC;
+  color: #aa3fec;
   width: 62px;
   height: 62px;
   background-color: white;
@@ -349,16 +342,35 @@ button:hover {
   color: white;
   width: 62px;
   height: 62px;
-  background-color: red;
   display: flex;
   justify-content: center;
   align-items: center;
   font-weight: 400;
-
 }
-
+.girl_info {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  height: 150px;
+  gap: 6px;
+  padding-inline: 18px;
+  color: #fff;
+}
+.girl_info > p {
+  padding: 0;
+  margin: 0;
+  color: #fff;
+}
+.girl_info > b{
+  font-size: 24px;
+}
 @keyframes fadeOut {
-  0% {
+  ◊ 0% {
     opacity: 1;
     transform: translate(-50%, -50%) scale(1);
   }
@@ -368,13 +380,10 @@ button:hover {
   }
 }
 
-
-
-
 /* swiper css */
 .swiper {
-width: 100%;
-height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 .swiper-slide {
@@ -426,6 +435,3 @@ height: 100%;
 .swiper-slide:nth-child(10n) {
   background-color: rgb(54, 94, 77);
 } */
-
-
-
