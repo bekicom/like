@@ -8,10 +8,21 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 14%;
+    gap: 16%;
     padding: 10px 0;
     position: fixed; /* Change from relative to fixed */
     bottom: 0;
     left: 0; /* Add this */
     z-index: 100; /* Increased z-index to ensure it stays on top */
+}
+
+button {
+  -webkit-tap-highlight-color: transparent; /* Mobilda bosilganda orqa fonni o'chiradi */
+  background: none; /* Tugmaning fon rangini o'chiradi */
+  border: none; /* Chegarasini olib tashlaydi */
+  cursor: pointer; /* Hover paytida ko'rsatkich o'zgaradi */
+}
+
+button:focus {
+  outline: none; /* Fokus holatda chegara chizilishini o'chiradi */
 }

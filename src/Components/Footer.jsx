@@ -1,5 +1,4 @@
-import { useNavigate, useLocation } from 'react-router-dom';
-import { useEffect } from 'react';
+import { NavLink, useLocation, Navigate } from 'react-router-dom';
 import styles from './footer.module.css';
 import searchIcon from '../img/searchIcon.svg';
 import searchIconActive from '../img/searchIcon-active.svg';
@@ -11,66 +10,37 @@ import history from '../img/history.svg';
 import historyActive from '../img/history-active.svg';
 
 const Footer = () => {
-  const navigate = useNavigate();
   const location = useLocation();
 
-  // Navigate to search page on initial load if at root
-  useEffect(() => {
-    if (location.pathname === '/') {
-      navigate('/reactjs-js-template/');
-    }
-  }, []);
 
-  const isActiveRoute = (itemPath) => {
-    // Handle root path
-    if (location.pathname === '/') {
-      return itemPath === '/reactjs-js-template/';
-    }
-
-    // Handle empty path or just the base path
-    if (location.pathname === '/reactjs-js-template/' || location.pathname === '/reactjs-js-template') {
-      return itemPath === '/reactjs-js-template/';
-    }
-
-    if (itemPath === '/reactjs-js-template/') {
-      return location.pathname === itemPath || location.pathname === '/';
-    }
-    
-    if (itemPath === '/tarifs') {
-      return location.pathname.startsWith('/tarifs') || location.pathname.includes('/payment');
-    }
-    
-    if (itemPath === '/history') {
-      return location.pathname.startsWith('/history') || location.pathname.includes('/profile');
-    }
-    
-    return location.pathname.startsWith(itemPath);
-  };
+  if (location.pathname === '/') {
+    return <Navigate to="/reactjs-js-template/" replace />;
+  }
 
   const navItems = [
-    { 
+    {
       activeIcon: searchIconActive,
-      inactiveIcon: searchIcon, 
-      path: '/reactjs-js-template/', 
-      label: 'Search' 
+      inactiveIcon: searchIcon,
+      path: '/reactjs-js-template/',
+      label: 'Search'
     },
-    { 
+    {
       activeIcon: historyActive,
-      inactiveIcon: history, 
-      path: '/history', 
-      label: 'History' 
+      inactiveIcon: history,
+      path: '/history',
+      label: 'History'
     },
-    { 
+    {
       activeIcon: diamondActive,
-      inactiveIcon: diamond, 
-      path: '/tarifs', 
-      label: 'Diamond' 
+      inactiveIcon: diamond,
+      path: '/tarifs',
+      label: 'Diamond'
     },
-    { 
+    {
       activeIcon: likeActive,
-      inactiveIcon: like, 
-      path: '/heart', 
-      label: 'Heart' 
+      inactiveIcon: like,
+      path: '/heart',
+      label: 'Heart'
     }
   ];
 
@@ -78,23 +48,25 @@ const Footer = () => {
     <div className="main">
       <div className={styles.footer}>
         {navItems.map((item) => (
-          <button
+          <NavLink
             key={item.path}
-            onClick={() => navigate(item.path)}
-            className={`${styles.footerButton} ${isActiveRoute(item.path) ? styles.active : ''}`}
-            style={{
-              background: 0, 
-              border: 0,
-              opacity: isActiveRoute(item.path) ? 1 : 0.5
-            }}
+            to={item.path}
+            className={({ isActive }) =>
+              `${styles.footerButton} ${isActive ? styles.active : ''}`
+            }
+            style={({ isActive }) => ({
+              background: 'none',
+              border: 'none',
+              opacity: isActive ? 1 : 0.5
+            })}
           >
             <img
-              src={isActiveRoute(item.path) ? item.activeIcon : item.inactiveIcon}
+              src={location.pathname.startsWith(item.path) ? item.activeIcon : item.inactiveIcon}
               alt={item.label}
               className={styles.footerIcon}
               style={{ width: 24, height: 24 }}
             />
-          </button>
+          </NavLink>
         ))}
       </div>
     </div>
